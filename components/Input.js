@@ -1,7 +1,7 @@
 import { useContext, useEffect, useRef } from 'react'
 import styled from 'styled-components'
 import { database } from '../firebase-tools'
-import { AuthContext } from '../pages/_app'
+import { AuthContext } from '../pages/index'
 
 export default function Input({placeHolder, children}) {
 
