@@ -5,6 +5,7 @@
 ![Screenshot](screenshot.png)
 
 ## Features
+- Mobile First Design
 - Firebase Authantication
 - Custom Username Routes
 - Realtime Link Update
