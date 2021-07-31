@@ -2,6 +2,7 @@ import { useContext, useEffect, useRef } from 'react'
 import styled from 'styled-components'
 import { database } from '../firebase-tools'
 import { AuthContext } from '../pages/index'
+import isURL from 'validator/lib/isURL';
 
 export default function Input({placeHolder, children}) {
 
@@ -24,9 +25,15 @@ export default function Input({placeHolder, children}) {
 
     const onChange = ()=>{
         const value = inputRef.current.value
-        const newvalue = {}
-        newvalue[key] = value
-        database.collection("users").doc(user.uid).set(newvalue, {merge: true})
+        if (isURL(value) || value === ""){
+            const newvalue = {}
+            newvalue[key] = value
+            database.collection("users").doc(user.uid).set(newvalue, {merge: true})
+            inputRef.current.style.borderColor = "green"
+        } else {
+            inputRef.current.style.borderColor = "red"
+        }
+        
     }
     
     useEffect(() => {
