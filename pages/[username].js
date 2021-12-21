@@ -1,5 +1,6 @@
 import { useRouter } from 'next/router'
 import React, { useEffect, useState } from 'react'
+import Head from 'next/head'
 import Profile from '../components/Profile'
 import Divider from '../components/Divider'
 import { database } from '../firebase-tools'
@@ -46,6 +47,11 @@ export default function UserProfile() {
         <div>
             {(profile)
             ?<>
+            <Head>
+				<title>{profile.displayName} • LinkList</title>
+				<meta name="description" content="All your social links in one place." />
+				<link rel="icon" href="/favicon.ico" />
+			</Head>
             <Profile user={{
                 email: profile.email,
                 displayName: profile.displayName,
