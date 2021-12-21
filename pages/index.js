@@ -18,12 +18,10 @@ import Soundcloud from '../components/icons/Soundcloud'
 import Gitlab from '../components/icons/Gitlab'
 import Dev from '../components/icons/Dev'
 import Codepen from '../components/icons/Codepen'
-import { useCollection } from 'react-firebase-hooks/firestore'
-import { useContext, useEffect, useRef } from 'react'
 import UsernameInput from '../components/UsernameInput'
 import { useAuthState } from 'react-firebase-hooks/auth'
 import Loading from '../components/Loading'
-import Login from '../components/login'
+import Login from '../components/Login'
 
 import { createContext } from 'react'
 export const AuthContext = createContext()
