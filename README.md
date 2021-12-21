@@ -1,5 +1,5 @@
 # LinkList
-[LinkTree](https://linktr.ee/) clone made with Next.js and Firebase
+[LinkTree](https://linktr.ee/) clone made with Next.js and Firebase and deployed with vercel at [link-list-6z948b8pp-d33kshant.vercel.app](https://link-list-6z948b8pp-d33kshant.vercel.app/)
 
 ## Screenshots
 ![Screenshot](screenshot.png)
