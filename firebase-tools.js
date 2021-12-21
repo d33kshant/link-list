@@ -1,12 +1,12 @@
 import firebase from "firebase"
 
 const config = {
-	apiKey: process.env.API_KEY,
-	authDomain: process.env.AUTH_DOMAIN,
-	projectId: process.env.PROJECT_ID,
-	storageBucket: process.env.STORAGE_BUCKET,
-	messagingSenderId: process.env.MESSAGING_SENDER_ID,
-	appId: process.env.APP_ID
+	apiKey: "AIzaSyDthXcbwAdvtWKh6A9F8Ofbcf5Al3DQNp4",
+	authDomain: "link-list-dev.firebaseapp.com",
+	projectId: "link-list-dev",
+	storageBucket: "link-list-dev.appspot.com",
+	messagingSenderId: "577166295829",
+	appId: "1:577166295829:web:b47136dd973d45fd549f1c"
 }
 
 const app = !firebase.apps.length ? firebase.initializeApp(config) : firebase.app()
