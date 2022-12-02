@@ -10,6 +10,7 @@
 - Custom Username Routes
 - Realtime Link Update
 - 404 Page for User not found
+
 ## Project & Firebase Setup
 1. Clone this repo and inatall node modules from `package.json`
 2. Create a firebase project and add an web app in your project.
